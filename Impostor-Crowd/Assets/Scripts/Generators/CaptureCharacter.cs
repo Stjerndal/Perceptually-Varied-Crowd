@@ -5,7 +5,7 @@ using System.IO;
 public class CaptureCharacter : MonoBehaviour
 {
     public Texture2D charTexture;
-    public int textureWidth = 1024;
+    public int textureWidth = 256;
     public bool saveTextures = true;
     private int numberOfAngles;
     private int numberOfFrames;
