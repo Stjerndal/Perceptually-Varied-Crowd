@@ -5,7 +5,7 @@ Properties {
 	_MainTex ("Base (RGB) Trans (A)", 2D) = "white" {}
 	_BumpMap ("Normalmap", 2D) = "bump" {}
 	_Cutoff ("Alpha cutoff", Range(0,1)) = 0.5
-	_ColorMatchAlpha ("Color Match Alpha", Float) = 0.95
+	_ColorMatchAlpha ("Color Match Alpha", Float) = 0.2
 	
 }
 
@@ -35,10 +35,18 @@ void surf (Input IN, inout SurfaceOutput o) {
 //			c *= _ShirtColor;
 //		}
 
-	if(c.a == _ColorMatchAlpha){
-		c *= _ShirtColor;
-	}
+	if( c.r > .86f && c.r < .90f &&
+		c.g > .18f && c.g < .20f &&
+		c.b > .37f && c.b < .40f){
+			c *= _ShirtColor;
+		}
+
+	//if(c.a >= 0.0f && c.a <= _ColorMatchAlpha){
+	//	c *= _ShirtColor;
+	//}
+	
 	o.Albedo = c.rgb;
+	//o.Alpha = 1.0f;
 	o.Alpha = c.a;
 	float3 n = UnpackNormal(tex2D(_BumpMap, IN.uv_BumpMap));
 	n.z = -n.z;

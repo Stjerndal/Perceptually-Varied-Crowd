@@ -4179,7 +4179,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1128973017
 Transform:
   m_ObjectHideFlags: 0
@@ -4612,26 +4612,34 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: 45d3e15671d3ad64ebdafa2cafae4035, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 45d3e15671d3ad64ebdafa2cafae4035, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 45d3e15671d3ad64ebdafa2cafae4035, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400010, guid: 45d3e15671d3ad64ebdafa2cafae4035, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400008, guid: 45d3e15671d3ad64ebdafa2cafae4035, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 45d3e15671d3ad64ebdafa2cafae4035, type: 2}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 45d3e15671d3ad64ebdafa2cafae4035, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400008, guid: 45d3e15671d3ad64ebdafa2cafae4035, type: 2}
+      propertyPath: crosshairEnabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4667,7 +4675,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1229151102}
   m_GameObject: {fileID: 1239891844}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 460d626c03e38eb408991a12c49a3820, type: 3}
   m_Name: 
@@ -4682,7 +4690,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1229151102}
   m_GameObject: {fileID: 1239891844}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca36fa4d2d3f2d3448c4dda09a587b32, type: 3}
   m_Name: 
@@ -4694,7 +4702,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1229151102}
   m_GameObject: {fileID: 1239891844}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60bca8f58a0b8478e946e6e86658cb29, type: 3}
   m_Name: 
@@ -4706,7 +4714,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1229151102}
   m_GameObject: {fileID: 1239891844}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ab79d7f243824f5d9826bd83522c8df, type: 3}
   m_Name: 
@@ -4762,7 +4770,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1229151102}
   m_GameObject: {fileID: 1239891844}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68ec2fe99d1108b9d0006a298d76c639, type: 3}
   m_Name: 
@@ -6079,7 +6087,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400320, guid: 6cd5c7acf7ffc8b4d9df101f28dcd207, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 6cd5c7acf7ffc8b4d9df101f28dcd207, type: 2}
       propertyPath: m_ApplyRootMotion
@@ -8409,7 +8417,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100186, guid: 26001126a0602e14da50fe4cadd83798, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 26001126a0602e14da50fe4cadd83798, type: 2}
       propertyPath: m_ApplyRootMotion

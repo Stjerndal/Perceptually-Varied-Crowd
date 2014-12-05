@@ -31,8 +31,10 @@ void surf (Input IN, inout SurfaceOutput o) {
 	if(c.a == _ColorMatchAlpha){
 		c *= _ShirtColor;
 	}
+	
 	o.Albedo = c.rgb;
 	o.Alpha = c.a;
+	//o.Alpha = 1.0f;
 }
 ENDCG
 }
