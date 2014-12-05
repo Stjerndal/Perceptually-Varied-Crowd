@@ -74,6 +74,7 @@ public class CaptureCharacter : MonoBehaviour
             blankNormalFrame [i] = normalColor;
         }
         textureMaterial = new Material(Shader.Find("Diffuse"));
+//		textureMaterial = new Material(Shader.Find("Transparent/Diffuse"));
         normalMaterial = new Material(Shader.Find("Custom/DisplayNormals"));
         textureMaterial.mainTexture = charTexture;
 		

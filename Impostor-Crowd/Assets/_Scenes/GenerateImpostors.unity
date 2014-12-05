@@ -455,7 +455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0384427d4514b99af8850384301765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charTexture: {fileID: 2800000, guid: cd159b378e74b4b4a8fccb6e9baf4776, type: 3}
+  charTexture: {fileID: 2800000, guid: e7de3ac5ba89de74a90463ec556de220, type: 3}
   textureWidth: 256
   saveTextures: 1
 --- !u!1 &172900381
