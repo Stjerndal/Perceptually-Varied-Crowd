@@ -23,14 +23,29 @@ struct Input {
 
 void surf (Input IN, inout SurfaceOutput o) {
 	fixed4 c = tex2D(_MainTex, IN.uv_MainTex) * _Color;
-//	if( c.r > .48f && c.r < .76f &&
-//		c.g > .49f && c.g < .80f &&
-//		c.b > .50f && c.b < .84f){
-//			c *= _ShirtColor;
-//		}
-	if(c.a == _ColorMatchAlpha){
-		c *= _ShirtColor;
-	}
+	if( c.r > .48f && c.r < .76f &&
+		c.g > .49f && c.g < .80f &&
+		c.b > .50f && c.b < .84f){
+			c *= _ShirtColor;
+
+		}
+		
+//		if( c.r > .86f && c.r < .90f &&
+//		c.g > .18f && c.g < .20f &&
+//		c.b > .37f && c.b < .40f){
+//			c.a = 1.0f;
+//			c = _ShirtColor;
+//		}	
+		
+//	if(c.a == _ColorMatchAlpha){
+//		c *= _ShirtColor;
+//	}
+
+	//if( c.r > .86f && c.r < .90f &&
+	//	c.g > .18f && c.g < .20f &&
+	//	c.b > .37f && c.b < .40f){
+	//		c *= _ShirtColor;
+	//	}
 	
 	o.Albedo = c.rgb;
 	o.Alpha = c.a;
