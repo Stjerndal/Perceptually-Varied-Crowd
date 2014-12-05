@@ -15,7 +15,7 @@ public class CrossRoad : MonoBehaviour
     private Vector3 rightPosition;
     private Vector3 topPosition;
     private Vector3 bottomPosition;
-    private GameObject character;
+    public GameObject character;
 
     public enum StartPosition
     {
@@ -152,8 +152,10 @@ public class CrossRoad : MonoBehaviour
 
 
     public void Start()
-    {
-        character = (GameObject)Resources.Load("NewCharacter");
+    {	
+		if(!character){
+			character = (GameObject)Resources.Load("NewCharacter");
+		}
         characterY = character.transform.position.y;
         Initialize();
         AddImpostors();

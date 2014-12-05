@@ -579,6 +579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnWidth: 20
   positions: {fileID: 207446393}
+  character: {fileID: 100320, guid: 6cd5c7acf7ffc8b4d9df101f28dcd207, type: 2}
 --- !u!4 &809712669
 Transform:
   m_ObjectHideFlags: 0
@@ -654,6 +655,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 32bf25f9e32144f43bdc9567955db8ea, type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 100320, guid: 6cd5c7acf7ffc8b4d9df101f28dcd207, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32bf25f9e32144f43bdc9567955db8ea, type: 2}
   m_RootGameObject: {fileID: 809712667}
