@@ -42,9 +42,15 @@ public class CaptureCharacter : MonoBehaviour
         numberOfFrames = Settings.numberOfFrames;
 
         myTransform = gameObject.transform;
-        midGeoTransform = transform.FindChild("CarlMidGeo");
+
+        midGeoTransform = transform.FindChild("MidGeo");
+		//myRenderer = midGeoTransform.GetComponent<SkinnedMeshRenderer>();
+		SkinnedMeshRenderer smr = GetComponentInChildren<SkinnedMeshRenderer>();
+		myRenderer = smr;
+
+
         mainCamera = Camera.main;
-        myRenderer = midGeoTransform.GetComponent<SkinnedMeshRenderer>();
+
         cameraPivot = GameObject.Find("CameraPivot").transform;
         animator = GetComponent<Animator>();
         animator.speed = 0f;

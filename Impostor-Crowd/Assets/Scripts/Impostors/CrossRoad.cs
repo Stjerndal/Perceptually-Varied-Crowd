@@ -153,7 +153,7 @@ public class CrossRoad : MonoBehaviour
 
     public void Start()
     {
-        character = (GameObject)Resources.Load("Character");
+        character = (GameObject)Resources.Load("NewCharacter");
         characterY = character.transform.position.y;
         Initialize();
         AddImpostors();
