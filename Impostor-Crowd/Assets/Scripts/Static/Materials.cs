@@ -14,34 +14,36 @@ public static class Materials
     private static Material[] meshMaterials;
     private static Material[,] impostorMaterials;
     private static Vector2[,,][] uvs;
+	public static Texture texture;
+	
 
-    static Materials()
-    {
-        // Set up colors
-        colors = new Color[numberOfColors];
-        for (int i = 0; i < numberOfColors; i++) {
-            colors [i] = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f), 1f);
-        }
 
-        // Set up materials
-        impostorMaterials = new Material[numberOfColors, numberOfQualities];
-        meshMaterials = new Material[numberOfColors];       
-        for (int color = 0; color < Settings.numberOfColors; color++) {
-            impostorMaterials [color, LowQuality] = MakeMaterial(color, LowQuality);
-            impostorMaterials [color, MediumQuality] = MakeMaterial(color, MediumQuality);
-            meshMaterials [color] = MakeMaterial(color);
-        }
-
-        // Set up UVs
-        uvs = new Vector2[numberOfAngles / 4, numberOfAngles, numberOfFrames][];
-        for (int x = 0; x < numberOfAngles / 4; x++) {
-            for (int y = 0; y < numberOfAngles; y++) {
-                for (int frame = 0; frame < numberOfFrames; frame++) {
-                    uvs [x, y, frame] = CalculateUV(x, y, frame);
-                }
-            }
-        }
-    }
+	static Materials(){
+		// Set up colors
+		colors = new Color[numberOfColors];
+		for (int i = 0; i < numberOfColors; i++) {
+			colors [i] = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f), 1f);
+		}
+		
+		// Set up materials
+		impostorMaterials = new Material[numberOfColors, numberOfQualities];
+		meshMaterials = new Material[numberOfColors];       
+		for (int color = 0; color < Settings.numberOfColors; color++) {
+			impostorMaterials [color, LowQuality] = MakeMaterial(color, LowQuality);
+			impostorMaterials [color, MediumQuality] = MakeMaterial(color, MediumQuality);
+			meshMaterials [color] = MakeMaterial(color);
+		}
+		
+		// Set up UVs
+		uvs = new Vector2[numberOfAngles / 4, numberOfAngles, numberOfFrames][];
+		for (int x = 0; x < numberOfAngles / 4; x++) {
+			for (int y = 0; y < numberOfAngles; y++) {
+				for (int frame = 0; frame < numberOfFrames; frame++) {
+					uvs [x, y, frame] = CalculateUV(x, y, frame);
+				}
+			}
+		}
+	}
 
     public static Material GetMaterial(int color)
     {
@@ -62,11 +64,18 @@ public static class Materials
     {
         Material mat = new Material(Shader.Find("ShirtColor/Diffuse"));
         mat.SetColor("_ShirtColor", colors [color]);
-        mat.SetTexture("_MainTex", (Texture)Resources.Load("ff"));
+		texture = (Texture) Resources.Load("CMan0010-M4-Body-D");
+		if(texture){
+			mat.SetTexture("_MainTex", texture);
+		}
+        else{
+			Debug.Log("Materials: No texture found, going with default");
+			mat.SetTexture("_MainTex", (Texture)Resources.Load("ff"));
+		}
         return mat;
     }
 
-    private static Material MakeMaterial(int color, int quality)
+    private static Material MakeMaterial(int color,int quality)
     {
         Material mat = new Material(Shader.Find("ShirtColor/Transparent"));
         mat.SetColor("_ShirtColor", colors [color]);
