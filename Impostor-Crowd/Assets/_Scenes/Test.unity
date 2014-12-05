@@ -1754,7 +1754,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: d5b48a85da2df4c4faa379533b34a6ea, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
 --- !u!137 &1128973019
@@ -3557,6 +3557,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100186, guid: 26001126a0602e14da50fe4cadd83798, type: 2}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 26001126a0602e14da50fe4cadd83798, type: 2}
+      propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
