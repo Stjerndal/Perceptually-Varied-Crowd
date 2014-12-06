@@ -5,7 +5,7 @@ using System.IO;
 public class CaptureCharacter : MonoBehaviour
 {
     public Texture2D charTexture;
-    public int textureWidth = 1024;
+    public int textureWidth = 256;
     public bool saveTextures = true;
     private int numberOfAngles;
     private int numberOfFrames;
@@ -74,6 +74,7 @@ public class CaptureCharacter : MonoBehaviour
             blankNormalFrame [i] = normalColor;
         }
         textureMaterial = new Material(Shader.Find("Diffuse"));
+//		textureMaterial = new Material(Shader.Find("Transparent/Diffuse"));
         normalMaterial = new Material(Shader.Find("Custom/DisplayNormals"));
         textureMaterial.mainTexture = charTexture;
 		
