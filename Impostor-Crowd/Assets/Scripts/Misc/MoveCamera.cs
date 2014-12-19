@@ -6,6 +6,7 @@ public class MoveCamera : MonoBehaviour
 
     public new GameObject camera;
     public Hashtable myTween;
+
     private Transform cityTarget;
 	public GameObject cameraTarget;
 
