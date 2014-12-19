@@ -7,11 +7,13 @@ public class MoveCamera : MonoBehaviour
     public new GameObject camera;
     public Hashtable myTween;
     private Transform cityTarget;
+	public GameObject cameraTarget;
 
     private float pathPosition;
     void Start()
     {
-        cityTarget = GameObject.Find("CityBlock").transform;
+        //cityTarget = GameObject.Find("CityBlock").transform;
+		cityTarget = cameraTarget.transform;
         Path1();
 
     }

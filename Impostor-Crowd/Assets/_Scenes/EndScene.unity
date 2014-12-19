@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 2054824453}
+  cameraTarget: {fileID: 452083967}
 --- !u!114 &118898993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1058,6 +1059,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 74a048b97f015234dacfc2533c298075, type: 2}
+      propertyPath: cameraTarget
+      value: 
+      objectReference: {fileID: 452083967}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74a048b97f015234dacfc2533c298075, type: 2}
   m_RootGameObject: {fileID: 369779225}

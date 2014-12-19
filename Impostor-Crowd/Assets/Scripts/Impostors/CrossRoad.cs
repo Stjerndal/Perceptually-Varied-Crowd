@@ -75,7 +75,7 @@ public class CrossRoad : MonoBehaviour
         {
             speed = Random.Range(1f, 2f);
             Vector3 direction = missionPos - startPos;
-            direction.y = 0;
+            //direction.y = 0;
             direction.Normalize();
             speedDirection = speed * direction;
             transform.rotation = Quaternion.LookRotation(direction);
@@ -123,8 +123,8 @@ public class CrossRoad : MonoBehaviour
                         break;
                 }
             }
-            startPos.y = cr.characterY;
-            missionPos.y = cr.characterY;
+            //startPos.y = cr.characterY;
+            //missionPos.y = cr.characterY;
         }
 
         private void AddOffset(ref Vector3 point, bool x)
@@ -157,6 +157,7 @@ public class CrossRoad : MonoBehaviour
 			character = (GameObject)Resources.Load("NewCharacter");
 		}
         characterY = character.transform.position.y;
+		//characterY = 10;
         Initialize();
         AddImpostors();
         StartCoroutine(UpdateImpostors());
