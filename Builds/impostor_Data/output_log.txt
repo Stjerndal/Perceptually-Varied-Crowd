@@ -1,0 +1,87 @@
+Initialize engine version: 4.6.0f1 (8b19a19f0c27)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dum.dll 9.18.13.4709]
+    Renderer: NVIDIA GeForce GTX 760
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: F:\GitHub\impostor crowd\impostor_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading F:\GitHub\impostor crowd\impostor_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: F:\GitHub\impostor crowd\impostor_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading F:\GitHub\impostor crowd\impostor_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: F:\GitHub\impostor crowd\impostor_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading F:\GitHub\impostor crowd\impostor_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: F:\GitHub\impostor crowd\impostor_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading F:\GitHub\impostor crowd\impostor_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: F:\GitHub\impostor crowd\impostor_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading F:\GitHub\impostor crowd\impostor_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: F:\GitHub\impostor crowd\impostor_Data\Managed\Tobii.EyeX.Client.Net20.dll (this message is harmless)
+Loading F:\GitHub\impostor crowd\impostor_Data\Managed\Tobii.EyeX.Client.Net20.dll into Unity Child Domain
+- Completed reload, in  0.082 seconds
+desktop: 1920x1080 60Hz; virtual: 5760x1200 at -1920,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: F:\GitHub\impostor crowd\impostor_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: F:\GitHub\impostor crowd\impostor_Data\Managed\System.dll (this message is harmless)
+Creating new EyeXHost instance.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/Tobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/.\Tobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/Tobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/Tobii.EyeX.Client
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/.\Tobii.EyeX.Client
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/Tobii.EyeX.Client
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/libTobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/.\libTobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/libTobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/Tobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/.\Tobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/Tobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/Tobii.EyeX.Client
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/.\Tobii.EyeX.Client
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/Tobii.EyeX.Client
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/libTobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/.\libTobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/libTobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/Tobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/.\Tobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/Tobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/Tobii.EyeX.Client
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/.\Tobii.EyeX.Client
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/Tobii.EyeX.Client
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/libTobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/.\libTobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/libTobii.EyeX.Client.dll
+DllNotFoundException: Tobii.EyeX.Client.dll
+  at (wrapper managed-to-native) Tobii.EyeX.Client.Interop.EyeX:EnableMonoCallbacks (string)
+  at Tobii.EyeX.Client.InteractionSystem..ctor (ILoggingModel loggingModel, IThreadingModel threadingModel, ISchedulingModel schedulingModel) [0x00000] in <filename unknown>:0 
+  at Tobii.EyeX.Client.InteractionSystem.Initialize (ILoggingModel loggingModel, IThreadingModel threadingModel, ISchedulingModel schedulingModel) [0x00000] in <filename unknown>:0 
+  at Tobii.EyeX.Client.InteractionSystem.Initialize () [0x00000] in <filename unknown>:0 
+  at EyeXHost.InitializeEyeX () [0x00000] in <filename unknown>:0 
+  at EyeXHost.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/Tobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/.\Tobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/Tobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/Tobii.EyeX.Client
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/.\Tobii.EyeX.Client
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/Tobii.EyeX.Client
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/libTobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/.\libTobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/libTobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/Tobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/.\Tobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/Tobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/Tobii.EyeX.Client
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/.\Tobii.EyeX.Client
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/Tobii.EyeX.Client
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/libTobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/.\libTobii.EyeX.Client.dll
+Fallback handler could not load library F:/GitHub/impostor crowd/impostor_Data/Mono/libTobii.EyeX.Client.dll
+Platform assembly: F:\GitHub\impostor crowd\impostor_Data\Managed\Boo.Lang.dll (this message is harmless)
