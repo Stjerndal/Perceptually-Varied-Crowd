@@ -65918,7 +65918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5c2c9d2d4800c94a812bd3766ba7e62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnWidth: 15
+  respawnWidth: 13
   positions: {fileID: 1623217678}
   character: {fileID: 100320, guid: 6cd5c7acf7ffc8b4d9df101f28dcd207, type: 2}
 --- !u!4 &1949375183
