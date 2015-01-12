@@ -221,7 +221,12 @@ public class CaptureCharacterPro : MonoBehaviour
     
     public void SaveToPNG(string path, Texture2D tex)
     {
+		#if UNITY_WEBPLAYER
+		Debug.Log("No WriteAllBytes on Webplayer.");
+		
+		#else
         File.WriteAllBytes(path, tex.EncodeToPNG());
+		#endif
     }
 
     void OnGUI()
